@@ -14,7 +14,7 @@
         </h1>
     </main>
     <audio id="myAudio">
-        <source src="/assets/onfoot.mp3" type="audio/mp3">
+        <source src="assets/onfoot.mp3" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
 
@@ -65,7 +65,7 @@
                 // scene.add( lightHelper )
 
                 const geometry = new THREE.SphereGeometry();
-                const texture = new THREE.TextureLoader().load('/textures/globe.jpeg')
+                const texture = new THREE.TextureLoader().load('textures/globe.jpeg')
                 const material = new THREE.MeshToonMaterial( { map: texture } );
                 sphere = new THREE.Mesh( geometry, material );
                 scene.add( sphere );
@@ -83,7 +83,7 @@
 
                 Array(100).fill().forEach(addStar)
 
-                const spaceTexture = new THREE.TextureLoader().load('/textures/space.jpeg')
+                const spaceTexture = new THREE.TextureLoader().load('textures/space.jpeg')
                 scene.background = spaceTexture
 
                 document.addEventListener( 'mousemove', onPointerMove );
